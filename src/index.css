@@ -1,0 +1,82 @@
+.switch{
+  height:90px;
+  width:200px;
+  border-radius: 50px;
+  margin: auto;
+  background-color:#ffff;
+  position: relative;
+  cursor: pointer;
+  
+}
+
+
+.notch {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  /* background: yellow; */
+  background:
+  linear-gradient(66.56deg, #4062DD 11.23%, #2141B3 159.88%);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  box-shadow: 0px 1px 20px #4062DD, inset 1px 1px 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+
+.grid > .notch {
+  /* background: whitesmoke;
+  box-shadow: 0 0 5px whitesmoke; */
+  transform: translate(120px, 0);
+}
+
+
+.switch .state{
+  position: absolute;
+  right: 40px;
+  top: 10px;
+}
+
+
+.switch .state .bar{
+  width: 50px;
+  height: 5px;
+  background-color: #585858;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.switch.grid{
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25), inset 1px 1px 5px 10px #484545;
+  background-color: #353132;
+}
+
+.grid .state{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+  left: 30px;
+  top: 10px;
+}
+
+.grid .state .bar{
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.grid .notch{
+  width: 50px;
+  height: 60px;
+  top: 15px;
+  right: 45px;
+  border-top-left-radius:5px ;
+  border-bottom-left-radius:5px ;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
